@@ -70,7 +70,8 @@ predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 """print("-> Starting Video Stream")
 vs = VideoStream(src=args["webcam"]).start()
 time.sleep(1.0)"""
-cap = cv2.VideoCapture("D:/dataset/UTA-RLDD/Fold1_part1/Fold1_part1/01/0.mov")
+folder = "D:/dataset/UTA-RLDD/Fold1_part1/Fold1_part1/01/0.mov"
+cap = cv2.VideoCapture(folder)
 
 #while True:
 while cap.isOpened():
